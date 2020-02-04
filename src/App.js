@@ -5,6 +5,7 @@ import Input from './Input';
 import Output from './Output';
 import ClearInput from './ClearInput';
 import UpperCaseOutput from './UpperCaseOutput';
+import CaesarCypher from './CaesarCypher';
 
 class App extends React.Component {
   constructor(props) {
@@ -23,6 +24,7 @@ class App extends React.Component {
           <Input textInput={this.state.textValue} updateText={this._updateText} />
           <Output inputText={this.state.textValue} />
           <UpperCaseOutput inputText={this.state.textValue} />
+          <CaesarCypher inputText={this.state.textValue} />
         </header>
       </div>
     );
