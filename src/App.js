@@ -4,6 +4,7 @@ import './App.css';
 import Input from './Input';
 import Output from './Output';
 import ClearInput from './ClearInput';
+import UpperCaseOutput from './UpperCaseOutput';
 
 class App extends React.Component {
   constructor(props) {
@@ -21,6 +22,7 @@ class App extends React.Component {
           <ClearInput clearFunction={this._clearInput} />
           <Input textInput={this.state.textValue} updateText={this._updateText} />
           <Output inputText={this.state.textValue} />
+          <UpperCaseOutput inputText={this.state.textValue} />
         </header>
       </div>
     );
