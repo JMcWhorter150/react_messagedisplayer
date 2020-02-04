@@ -1,9 +1,9 @@
 import React from 'react';
 
-function Input() {
+function Input({textInput, updateText}) {
     return (
         <label>
-                <input type="text" placeholder='Type Here'></input>
+                <input onChange={updateText} type="text" placeholder="Type Here" value={textInput}></input>
         </label>
     );
 }
